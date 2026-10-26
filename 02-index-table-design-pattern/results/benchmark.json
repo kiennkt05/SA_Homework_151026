@@ -1,0 +1,90 @@
+{
+  "database": "data\\people.db",
+  "records": 10000,
+  "index_rows": 10000,
+  "target_ward": "Cầu Giấy",
+  "matches": 799,
+  "iterations": 200,
+  "equivalent_results": true,
+  "baseline": {
+    "mean_ms": 45.735351,
+    "median_ms": 40.7986,
+    "p95_ms": 83.5089,
+    "min_ms": 33.1411,
+    "max_ms": 119.3368
+  },
+  "index_table": {
+    "mean_ms": 5.5432714999999995,
+    "median_ms": 4.162,
+    "p95_ms": 10.1432,
+    "min_ms": 3.2374,
+    "max_ms": 13.2643
+  },
+  "speedup": 8.250606343203648,
+  "query_plan": [
+    "SEARCH i USING PRIMARY KEY (ward=?)",
+    "SEARCH r USING INTEGER PRIMARY KEY (rowid=?)"
+  ],
+  "sample": [
+    {
+      "id": 3,
+      "full_name": "Hồ Đức Lan",
+      "address_detail": "Số 350, đường Minh Khai",
+      "ward": "Cầu Giấy",
+      "province": "Thành phố Hồ Chí Minh",
+      "permanent_address": [
+        "Số 350, đường Minh Khai",
+        "Cầu Giấy",
+        "Thành phố Hồ Chí Minh"
+      ]
+    },
+    {
+      "id": 15,
+      "full_name": "Trần Hải Giang",
+      "address_detail": "Số 589, đường Trần Duy Hưng",
+      "ward": "Cầu Giấy",
+      "province": "Hà Nội",
+      "permanent_address": [
+        "Số 589, đường Trần Duy Hưng",
+        "Cầu Giấy",
+        "Hà Nội"
+      ]
+    },
+    {
+      "id": 33,
+      "full_name": "Phạm Thanh Nam",
+      "address_detail": "Số 296, đường Nguyễn Trãi",
+      "ward": "Cầu Giấy",
+      "province": "Hà Nội",
+      "permanent_address": [
+        "Số 296, đường Nguyễn Trãi",
+        "Cầu Giấy",
+        "Hà Nội"
+      ]
+    },
+    {
+      "id": 54,
+      "full_name": "Lê Đức Trang",
+      "address_detail": "Số 593, đường Láng Hạ",
+      "ward": "Cầu Giấy",
+      "province": "Bắc Ninh",
+      "permanent_address": [
+        "Số 593, đường Láng Hạ",
+        "Cầu Giấy",
+        "Bắc Ninh"
+      ]
+    },
+    {
+      "id": 77,
+      "full_name": "Lê Thị Hùng",
+      "address_detail": "Số 346, đường Hoàng Quốc Việt",
+      "ward": "Cầu Giấy",
+      "province": "Hà Nội",
+      "permanent_address": [
+        "Số 346, đường Hoàng Quốc Việt",
+        "Cầu Giấy",
+        "Hà Nội"
+      ]
+    }
+  ]
+}
