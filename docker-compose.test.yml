@@ -1,0 +1,14 @@
+services:
+  minio:
+    image: adobe/s3mock:latest
+    command: []
+    environment:
+      COM_ADOBE_TESTING_S3MOCK_STORE_INITIAL_BUCKETS: avatars
+    ports: !override
+      - "9000:9090"
+      - "9001:9191"
+
+  minio-init:
+    image: adobe/s3mock:latest
+    entrypoint: ["/bin/true"]
+    command: []
